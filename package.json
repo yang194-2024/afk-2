@@ -1,0 +1,35 @@
+{
+  "name": "afk-2",
+  "version": "0.1.0",
+  "description": "A basic TypeScript CLI template using Commander and Vitest.",
+  "type": "module",
+  "bin": {
+    "afk-2": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "ci": "npm run typecheck && npm run test"
+  },
+  "keywords": [
+    "typescript",
+    "cli",
+    "commander",
+    "vitest",
+    "template"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
