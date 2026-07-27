@@ -1,0 +1,8 @@
+# Normalize line endings to LF for all text files to avoid CRLF churn.
+* text=auto eol=lf
+
+# Explicitly treat lockfiles and common source as text with LF.
+*.json   text eol=lf
+*.ts     text eol=lf
+*.yml    text eol=lf
+*.md     text eol=lf
