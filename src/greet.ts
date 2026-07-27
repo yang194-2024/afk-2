@@ -5,7 +5,6 @@
  * @returns A greeting string, e.g. "Hello, Ada!".
  */
 export function greet(name?: string): string {
-  const trimmed = name?.trim();
-  const who = trimmed && trimmed.length > 0 ? trimmed : "world";
+  const who = name?.trim() || "world";
   return `Hello, ${who}!`;
 }
